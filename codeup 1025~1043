@@ -1,0 +1,122 @@
+1025
+
+Arr = list(input())
+Len = len(Arr)-1
+for i in range(len(Arr)):
+​
+print("["+Arr[i]+str(0)*Len+"]")
+Len = Len-1
+
+-----------------------
+
+1026
+
+a, b, c = map(int,input().split(':'))
+print(b)
+
+-----------------------
+
+1027
+
+a,b,c = input().split('.')
+print(c.zfill(2)+'-'+b.zfill(2)+'-'+a.zfill(4))
+
+-----------------------
+
+1028
+
+a= input()
+
+print(a)
+
+----------------------
+
+1029
+
+a= float(input())
+
+print('%.11lf'%a)
+
+----------------------
+
+1030
+
+a = input()
+
+print(a)
+
+----------------------
+
+1031
+
+test = int(input())
+
+real = format(test, 'o')
+
+print(real)
+
+----------------------
+
+1032
+
+test = int(input())
+real = format(test, 'x')
+print(real)
+
+----------------------
+
+1033
+
+test = int(input())
+real = format(test, 'X')
+print(real)
+
+----------------------
+
+1037
+
+num = int(input())
+print(chr(num))
+
+#숫자를 받고 chr로 변환
+
+-----------------------
+
+1038 ~ 1039
+
+import sys
+a, b = map(int, sys.stdin.readline().split())
+print(a+b)
+
+-----------------------
+
+1040
+
+import sys
+num = int(sys.stdin.readline())
+print(-1 * num)
+
+-----------------------
+
+1041
+
+letter = input()
+real = ord(letter)+1
+print(chr(real))
+# 문자를 입력받고 아스키코드로 변환 후 1을 더해 다음 아스키코드로 넘어가 출력한다.
+
+------------------------
+
+1042
+
+import sys
+a, b = map(int,sys.stdin.readline().split())
+print(a//b)
+
+------------------------
+
+1043
+
+import sys
+a, b = map(int,sys.stdin.readline().split())
+print(a%b)
