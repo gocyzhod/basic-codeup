@@ -1,0 +1,382 @@
+1044 
+import sys
+
+a=int(sys.stdin.readline())
+
+print(a+1)
+
+---------------------------
+
+1045
+
+import sys
+
+a, b = map(int,sys.stdin.readline().split())
+print(a+b)
+print(a-b)
+print(a*b)
+print(a//b)
+print(a%b)
+print('%.2f' % (a/b))
+
+---------------------------
+
+1046
+
+a,b,c = map(int, input().split())
+
+Sum = a+b+c
+ave = (Sum)/3
+print(Sum)
+print('%.1f'%ave)
+---------------------------
+
+1047
+
+a = int(input())
+print(a*2)
+
+---------------------------
+
+1048
+
+a, b = map(int, input().split())
+test = 1
+count = 0
+while True:
+    if b == 0 :
+        break
+    test = test*2
+    count+=1
+    if count == b :
+        break
+print(a*test)
+
+
+---------------------------
+
+1049
+
+a , b = map(int, input().split())
+
+if a>b :
+    print(1)
+else:
+    print(0)
+
+---------------------------
+
+1050
+
+a , b = map(int, input().split())
+
+if a == b:
+    print(1)
+else:
+    print(0)
+
+---------------------------
+
+1051
+
+a , b = map(int, input().split())
+
+if b >= a :
+    print(1)
+else:
+    print(0)
+
+---------------------------
+
+1052
+
+a , b = map(int, input().split())
+
+if a != b :
+    print(1)
+else:
+    print(0)
+
+---------------------------
+
+1053
+
+a = int(input())
+if a == 1:
+    print(0)
+else :
+    print(1)
+
+---------------------------
+
+1054
+
+a, b = map(int,input().split())
+if a == 1 and b == 1:
+    print(1)
+else:
+    print(0)
+
+
+---------------------------
+
+1055
+
+a, b = map(int,input().split())
+
+if a == 1 or b== 1:
+    print(1)
+else :
+    print(0)
+
+---------------------------
+
+1056
+
+a, b = map(int,input().split())
+
+if a != b:
+    print(1)
+else :
+    print(0)
+
+---------------------------
+
+1057
+
+a, b = map(int,input().split())
+
+if a == b:
+    print(1)
+else :
+    print(0)
+
+---------------------------
+
+1058
+
+a, b = map(int,input().split())
+
+if a == 0 and b==0:
+    print(1)
+else :
+    print(0)
+
+---------------------------
+
+1059
+
+a= int(input())
+print(~a)
+
+---------------------------
+
+1060
+
+a , b = map(int, input().split())
+print( a&b)
+
+---------------------------
+
+1061
+
+a , b = map(int, input().split())
+
+print( a|b)
+
+
+---------------------------
+
+1062
+
+a , b = map(int, input().split())
+print( a^b)
+
+---------------------------
+
+1063
+
+a,b=input().split()
+x=int(a)
+y=int(b)
+print(x if x>y else y)
+
+---------------------------
+
+1065
+
+a,b,c  = map(int, input().split())
+if a % 2 == 0:
+    print(a)
+if b % 2 == 0:
+    print(b)
+if c %2 == 0 :
+    print(c)
+
+
+---------------------------
+
+1066
+
+a,b,c  = map(int, input().split())
+if a % 2 == 0:
+    print('even')
+else:
+    print('odd')
+if b % 2 == 0:
+    
+    print('even')
+else:
+    print('odd')
+if c %2 == 0 :
+    
+    print('even')
+else:
+    print('odd')
+
+
+---------------------------
+
+1067
+
+a= int(input())
+if a > 0 :
+    print("plus")
+else:
+    print("minus")
+
+if a % 2 == 0:
+    print('even')
+else:
+    print('odd')
+
+
+---------------------------
+
+1068
+
+a= int(input())
+
+if 0 <= a and a <= 39 :
+    print('D')
+elif 40 <=  a and a <=69:
+    print('C')
+elif 70 <= a and a <= 89:
+    print('B')
+elif 90 <= a and a <= 100:
+    print('A')
+
+
+---------------------------
+
+1069
+
+x= input();
+
+def switch(x):
+    print({'A': 'best!!!', 'B':  'good!!', 'C': 'run!', 'D': 'slowly~'}.get(x, 'what?'));
+
+switch(x);
+
+---------------------------
+
+1070
+
+month = int(input());
+
+def season(mon):
+    print({12: 'winter', 1: 'winter',  2: 'winter', 3: 'spring', 4: 'spring', 5: 'spring', 6: 'summer', 7: 'summer', 8: 'summer', 9: 'fall', 10: 'fall', 11: 'fall'}.get(mon, -1));
+
+season(month);
+
+---------------------------
+
+1071
+
+import sys
+arr = list(input().split())
+x = 0
+def cal():
+    global x
+    if x == len(arr):
+        return main()
+    if arr[x] != '0' :
+        print(arr[x])
+        x=x+1
+        return cal()
+    elif arr[x] == '0' :
+        return main()
+def main():
+    sys.exit()
+cal()
+
+---------------------------
+
+1072
+
+import sys
+n = int(input())
+arr = list(input().split())
+x= 0
+def count():
+    global n
+    global x
+    print(arr[x])
+    x=x+1
+    if x == n:
+        sys.exit()
+    return count()
+count()
+
+---------------------------
+
+1073
+
+import sys
+
+arr = list(sys.stdin.readline().split())
+
+for i in range(len(arr)):
+    if arr[i] == '0':
+        sys.exit()
+    else:
+        print(arr[i])
+        
+---------------------------
+
+1074
+
+n = int(input())
+
+for i in range(n):
+    print(n-i)
+    
+---------------------------
+
+1075
+
+n = int(input())
+
+for i in range(n):
+    print(n-i-1)
+
+---------------------------
+
+1076
+
+import sys
+n = input()
+for i in range(97,ord(n)+1):
+    if i > ord(n) :
+        sys.exit()
+    print(chr(i))
+    
+---------------------------
+
+1077
+
+import sys
+number = int(sys.stdin.readline())
+for i in range(number+1):
+    print(i)
+    
